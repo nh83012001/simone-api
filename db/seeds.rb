@@ -8,9 +8,9 @@
 
 
 #
-# easy = Config.create("config_type"=>"easy")
-# medium = Config.create("config_type"=>"medium")
-# hard = Config.create("config_type"=>"hard")
+easy = Config.create("config_type"=>"easy")
+medium = Config.create("config_type"=>"medium")
+hard = Config.create("config_type"=>"hard")
 
 nick = App.create(name: "ASH",score:10, config_id: 1)
 nick = App.create(name: "NAH",score:10, config_id: 2)
