@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+easy = Config.create("config_type"=>"easy")
+medium = Config.create("config_type"=>"medium")
+hard = Config.create("config_type"=>"hard")

@@ -16,14 +16,14 @@ class Api::V1::AppsController < ApplicationController
     end
 
     def create
-
+      byebug
       App.create(app_params)
 
     end
 
     private
     def app_params
-      params.permit(:name, :score, :config, :params, :app)
+      params.permit(:name, :score, :config_id, :params, :app)
     end
 
 

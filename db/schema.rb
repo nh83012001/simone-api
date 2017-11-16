@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171115202819) do
+ActiveRecord::Schema.define(version: 20171116001524) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,10 @@ ActiveRecord::Schema.define(version: 20171115202819) do
     t.string  "name"
     t.string  "config"
     t.integer "score"
+  end
+
+  create_table "configs", force: :cascade do |t|
+    t.string "config_type"
   end
 
 end
