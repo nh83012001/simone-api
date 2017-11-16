@@ -7,7 +7,16 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-
+#
 easy = Config.create("config_type"=>"easy")
 medium = Config.create("config_type"=>"medium")
 hard = Config.create("config_type"=>"hard")
+
+nick = App.create(name: "nick",score:20, config_id: 1)
+nick = App.create(name: "nick",score:40, config_id: 2)
+nick = App.create(name: "nick",score:40, config_id: 2)
+nick = App.create(name: "nick",score:20, config_id: 2)
+nick = App.create(name: "nick",score:50, config_id: 2)
+nick = App.create(name: "nick",score:50, config_id: 3)
+nick = App.create(name: "nick",score:60, config_id: 3)
+nick = App.create(name: "nick",score:60, config_id: 3)

@@ -2,7 +2,10 @@ class Api::V1::ConfigsController < ApplicationController
   def index
       @configs = Config.all
       render json: @configs
-    end
+
+  end
+
+
   #
   #   def update
   #     @config = Config.find(params[:id])

@@ -1,6 +1,7 @@
 class Api::V1::AppsController < ApplicationController
   def index
-      @apps = App.all
+
+      @apps = App.all.select{|app| app.config_id.to_s == params[:config_id].to_s}
       render json: @apps
     end
 
@@ -16,10 +17,16 @@ class Api::V1::AppsController < ApplicationController
     end
 
     def create
-      byebug
+
       App.create(app_params)
 
     end
+
+    def show
+        @app = App.find(params[:id])
+        render json: @app
+    end
+
 
     private
     def app_params
