@@ -1,24 +1,37 @@
-# README
+# Simone Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Classic Simon game with multiple levels of difficulty. We brought the 90s back
+through sound and CSS! To play the deployed game go to
+https://ashleecrusco.github.io/simone/.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Copy the link of repository upper right of this page (clone or download).
 
-* System dependencies
+```
+Git clone git@github.com:nh83012001/simone-api.git
+```
 
-* Configuration
+### Installing
 
-* Database creation
+Once you have gone into the folder for Simone, the following will download the
+necessary files for our app to run.
 
-* Database initialization
+```
+Type "bundle" into terminal to download dependencies
+Type "rails s -p 3001" into terminal to run server
+```
 
-* How to run the test suite
+## Built With
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails
+* Active Record
+* Rack-cors
+* Active-Model-Serializers
+* Heroku
+  ## Author
+* **Nick Hall** - _Initial work_ - [Github](https://github.com/nh83012001)
+* **Ashlee Crusco** - _Initial work_ - [Github](https://github.com/ashleecrusco)
+  ## License
+  This project is licensed under the MIT License - see the
+  [LICENSE.md](LICENSE.md) file for details
